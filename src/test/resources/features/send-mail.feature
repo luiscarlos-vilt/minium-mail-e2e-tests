@@ -6,14 +6,14 @@ Feature: Send Emails
     Given I'm at Minium Mail
 
   Scenario: Send an Email
-    When I click on button "Compose"
+    When I click on botão "Compose"
     And I fill:
       | Recipients | Rui Figueira    |
       | Subject    | Minium Test     |
       | Message    | My new Message  |
       | Attachment | minium_logo.png |
     And I click on button "Send"
-    And I navigate to section "Sent"
+    And I navigate to seção "Sent"
     Then I should see an email with:
       | Recipients | Rui Figueira    |
       | Subject    | Minium Test     |
